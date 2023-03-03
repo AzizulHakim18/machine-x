@@ -14,6 +14,8 @@ const Header = () => {
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/login">Log In</Link></li>
+                        <li><Link to="/registration">Registration</Link></li>
                     </ul>
                 </div>
                 <Link className="btn btn-ghost normal-case text-xl ">Machine.<span className='font-bold text-6xl italic text-amber-400'>x</span></Link>
@@ -24,6 +26,8 @@ const Header = () => {
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/login">Log In</Link></li>
+                    <li><Link to="/registration">Registration</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">
