@@ -28,6 +28,9 @@ const Services = () => {
                 }
             </div>
 
+            <div className='m-4 flex justify-center'><button className="btn btn-outline btn-secondary">More Services</button>
+            </div>
+
         </div>
     );
 };

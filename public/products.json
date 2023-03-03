@@ -1,0 +1,44 @@
+[
+    {
+        "image": "https://img.freepik.com/free-photo/different-car-accessories-composition_23-2149030383.jpg?w=996&t=st=1677841997~exp=1677842597~hmac=1e3de23a93b6d850a01f9821d0e8645c8577dd67e78454ae60c3bc250f37009b",
+        "ratings": 4.5,
+        "name": "Oil Filter Wrench",
+        "price": 15.99,
+        "details": "A tool designed to remove spin-on type oil filters."
+    },
+    {
+        "image": "https://img.freepik.com/free-photo/different-car-accessories-arrangement_23-2149030403.jpg?w=996&t=st=1677842003~exp=1677842603~hmac=4b26cd636c358b9f825e54d37ee1ad3472ceb5b8056bf9cd0f668206279c7a65",
+        "ratings": 4.2,
+        "name": "Tire Inflator",
+        "price": 29.99,
+        "details": "A device that inflates vehicle tires to the correct pressure."
+    },
+    {
+        "image": "https://img.freepik.com/free-photo/car-accessories-with-copy-space_23-2149030442.jpg?w=996&t=st=1677842012~exp=1677842612~hmac=f2b9bfbb0b1831f9236c8563403ffddb765bbccb8fb87e5087e02d8577c800d4",
+        "ratings": 4.7,
+        "name": "Socket Set",
+        "price": 39.99,
+        "details": "A set of various sized sockets used for tightening or loosening nuts and bolts."
+    },
+    {
+        "image": "https://img.freepik.com/free-photo/different-car-accessories-arrangement_23-2149030413.jpg?w=996&t=st=1677842026~exp=1677842626~hmac=56e106a6ed851e2075a916bed7402c1d8a07c3fed33d8eaa286b845f53307d41",
+        "ratings": 4.1,
+        "name": "Jump Starter",
+        "price": 89.99,
+        "details": "A device used to jump start a car's battery."
+    },
+    {
+        "image": "https://img.freepik.com/free-photo/different-car-accessories-composition_23-2149030383.jpg?w=996&t=st=1677841997~exp=1677842597~hmac=1e3de23a93b6d850a01f9821d0e8645c8577dd67e78454ae60c3bc250f37009b",
+        "ratings": 4.1,
+        "name": "Jump Starter",
+        "price": 89.99,
+        "details": "A device used to jump start a car's battery."
+    },
+    {
+        "image": "https://img.freepik.com/free-photo/car-accessories-with-copy-space_23-2149030442.jpg?w=996&t=st=1677842012~exp=1677842612~hmac=f2b9bfbb0b1831f9236c8563403ffddb765bbccb8fb87e5087e02d8577c800d4",
+        "ratings": 4.1,
+        "name": "Jump Starter",
+        "price": 89.99,
+        "details": "A device used to jump start a car's battery."
+    }
+]
