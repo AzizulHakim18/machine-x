@@ -1,0 +1,20 @@
+.bg-color1 {
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url('https://img.freepik.com/free-phohref/service-station-two-bearded-brutal-mechanics-repairing-car-garage_613910-19571.jpg?w=900&t=st=1677830695~exp=1677831295~hmac=beceb2eb2b8b81f92f52753b2da76fcaefeb3debc462b6ded1d9d7a054acdec5');
+    background-size: cover;
+}
+
+.bg-color2 {
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url('https://img.freepik.com/free-phohref/mechanic-repairing-car-workshop_329181-11833.jpg?w=996&t=st=1677830710~exp=1677831310~hmac=97e48dbbf348a4f1834fb23430cb8c5a5f91a268b7a4e8785418a8ec15381271');
+    background-size: cover;
+}
+
+.bg-color3 {
+    background-image:
+        linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(117, 19, 93, 0.73)),
+        url('https://img.freepik.com/free-phohref/cushrefmer-talking-with-mechanic-workshop_329181-11854.jpg?w=996&t=st=1677830718~exp=1677831318~hmac=14a42c1d71c402dd5324ced14cb92bf5a8562a01f24358e802e1dea7367ff537');
+    background-size: cover;
+}

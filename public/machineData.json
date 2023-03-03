@@ -1,0 +1,184 @@
+[
+    {
+        "id": "1a",
+        "service_id": "01",
+        "title": "Engine Oil Change",
+        "img": "https://img.freepik.com/free-photo/creative-man-working-wood-workshop_23-2148970804.jpg?t=st=1677821205~exp=1677821805~hmac=373485dbbfe1f969e13fc4841be52d45139869b91e30f0ff3991b6d83eb567ed",
+        "price": "20",
+        "description": "This service includes basic maintenance for your machine.",
+        "facility": [
+            {
+                "name": "Instant Cart Services",
+                "details": "Check for any visible damage or wear."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Lubricate all moving parts as necessary."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Clean machine surfaces to remove any buildup."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Test machine functionality to ensure it's working properly."
+            }
+        ]
+    },
+    {
+        "id": "2a",
+        "service_id": "02",
+        "title": "Advanced Machine Service",
+        "img": "https://img.freepik.com/free-photo/mechanic-with-tool-wheel-hands-mechanic-blue-work-clothes_1157-46153.jpg?w=996&t=st=1677821197~exp=1677821797~hmac=a75b50aafdc440826f88ffb28a1ebc6d51499aaf84aeb22a4c4d141002c7fff5",
+        "price": "20",
+        "description": "This service includes advanced maintenance and repair for your machine.",
+        "facility": [
+            {
+                "name": "Diagnostic",
+                "details": "Perform diagnostic tests to identify any issues."
+            },
+            {
+                "name": "Repair",
+                "details": "Repair or replace any faulty or damaged parts."
+            },
+            {
+                "name": "Calibration",
+                "details": "Calibrate the machine to ensure it's operating within spec."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "This service is for emergency repairs when your machine breaks down unexpectedly."
+            }
+        ]
+    },
+    {
+        "id": "3a",
+        "service_id": "03",
+        "title": "Diagnostic",
+        "img": "https://img.freepik.com/free-photo/close-up-young-businessman-bike-shop_23-2149039057.jpg?w=996&t=st=1677821205~exp=1677821805~hmac=a640a40c4886a486ad52e1331f9ef89abbb9bfa9cce24311ea0f5a2d94833283",
+        "price": "20",
+        "description": "This service is for emergency repairs when your machine breaks down unexpectedly.",
+        "facility": [
+            {
+                "name": "Diagnostic",
+                "details": "Perform diagnostic tests to identify the issue."
+            },
+            {
+                "name": "Repair",
+                "details": "Repair or replace any faulty or damaged parts."
+            },
+            {
+                "name": "Testing",
+                "details": "Test machine functionality to ensure it's working properly."
+            },
+            {
+                "name": "Rush Service",
+                "details": "This service is available for an additional fee for faster turnaround."
+            }
+        ]
+    },
+    {
+        "id": "4a",
+        "service_id": "04",
+        "title": "Engine Oil Change",
+        "img": "https://img.freepik.com/free-photo/female-carpenter-studio-with-headphones_23-2148813327.jpg?w=740&t=st=1677821110~exp=1677821710~hmac=e924d2df772da719cc9c82c8ee45522d3001a4d87ab7bd69f362d8c3d8753a99",
+        "price": "20",
+        "description": "This service includes advanced maintenance and repair for your machine.",
+        "facility": [
+            {
+                "name": "Diagnostic",
+                "details": "Perform diagnostic tests to identify the issue."
+            },
+            {
+                "name": "Repair",
+                "details": "Repair or replace any faulty or damaged parts."
+            },
+            {
+                "name": "Testing",
+                "details": "Test machine functionality to ensure it's working properly."
+            },
+            {
+                "name": "Rush Service",
+                "details": "This service is available for an additional fee for faster turnaround."
+            }
+        ]
+    },
+    {
+        "id": "5a",
+        "service_id": "05",
+        "title": "Engine Oil Change",
+        "img": "https://img.freepik.com/free-photo/side-view-female-carpenter-studio-using-electric-saw_23-2148813332.jpg?w=1060&t=st=1677821118~exp=1677821718~hmac=86c1de06e7ef11894806b046cb03997b2cca2a3973a9ec1d0b811bcb5f1c765f",
+        "price": "20",
+        "description": "This service includes advanced maintenance and repair for your machine.",
+        "facility": [
+            {
+                "name": "Diagnostic",
+                "details": "Perform diagnostic tests to identify the issue."
+            },
+            {
+                "name": "Repair",
+                "details": "Repair or replace any faulty or damaged parts."
+            },
+            {
+                "name": "Testing",
+                "details": "Test machine functionality to ensure it's working properly."
+            },
+            {
+                "name": "Rush Service",
+                "details": "This service is available for an additional fee for faster turnaround."
+            }
+        ]
+    },
+    {
+        "id": "6a",
+        "service_id": "06",
+        "title": "Engine Oil Change",
+        "img": "https://img.freepik.com/free-photo/portrait-young-worker-hard-hat-large-metalworking-plant_146671-19568.jpg?w=996&t=st=1677821021~exp=1677821621~hmac=5399f8c2a5c68d24a1f76149befadca1d5d538fadfc1ee06f16f60a8418dc1cf",
+        "price": "20",
+        "description": "This service includes advanced maintenance and repair for your machine.",
+        "facility": [
+            {
+                "name": "Diagnostic",
+                "details": "Perform diagnostic tests to identify the issue."
+            },
+            {
+                "name": "Repair",
+                "details": "Repair or replace any faulty or damaged parts."
+            },
+            {
+                "name": "Testing",
+                "details": "Test machine functionality to ensure it's working properly."
+            },
+            {
+                "name": "Rush Service",
+                "details": "This service is available for an additional fee for faster turnaround."
+            }
+        ]
+    },
+    {
+        "id": "7a",
+        "service_id": "07",
+        "title": "Engine Oil Change",
+        "img": "https://img.freepik.com/free-photo/female-carpenter-with-safety-glasses-tool_23-2148813320.jpg?w=826&t=st=1677821047~exp=1677821647~hmac=49dd883602d4525da85c514f7ddc0555d16023d2c5bfc3c9eb52ea2add9c296a",
+        "price": "20",
+        "description": "This service includes advanced maintenance and repair for your machine.",
+        "facility": [
+            {
+                "name": "Diagnostic",
+                "details": "Perform diagnostic tests to identify the issue."
+            },
+            {
+                "name": "Repair",
+                "details": "Repair or replace any faulty or damaged parts."
+            },
+            {
+                "name": "Testing",
+                "details": "Test machine functionality to ensure it's working properly."
+            },
+            {
+                "name": "Rush Service",
+                "details": "This service is available for an additional fee for faster turnaround."
+            }
+        ]
+    }
+]
