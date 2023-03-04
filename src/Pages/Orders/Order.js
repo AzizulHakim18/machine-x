@@ -12,7 +12,7 @@ const Order = ({ order, handleDelete, handleStatusUpdate }) => {
     //         .then(data => setOrderService(data))
     // }, [service])
     useEffect(() => {
-        fetch(`http://localhost:5000/services/${service}`)
+        fetch(`https://machinex-serverside.vercel.app/services/${service}`)
             .then(res => res.json())
             .then(data => setOrderService(data))
     }, [service])
