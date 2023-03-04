@@ -1,5 +1,8 @@
-import React from 'react';
+
+import React, { useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../../Context/UserContexts';
 
 const Registration = () => {
 
@@ -8,13 +11,55 @@ const Registration = () => {
     const from = location.state?.from?.pathname || '/';
 
 
+    const { createUser, updateName, verifyEmail } = useContext(AuthContext);
+
+    const handleSubmit = event => {
+        event.preventDefault()
+
+        const name = event.target.fullname.value
+        const email = event.target.email.value
+        const password = event.target.password.value
+
+        const user = { name, email, password }
+        console.log(user);
+
+
+        //1. Create Account
+        createUser(email, password)
+            .then(result => {
+                console.log(result.user)
+
+                //2. Update Name
+                updateName(name)
+                    .then(() => {
+                        toast.success('Name Updated')
+
+                        //3. Email verification
+                        verifyEmail()
+                            .then(() => {
+                                toast.success('Please check your email for verification link')
+                                navigate(from, { replace: true })
+                            })
+                            .catch(error => {
+                                toast.error(error.message)
+                            })
+                    })
+                    .catch(error => {
+                        toast.error(error.message)
+                    })
+            })
+            .catch(error => console.log(error))
+    }
+
+
+
     return (
         <div>
             <div class="bg-grey-lighter min-h-screen flex flex-col">
                 <div class="container max-w-sm mx-auto flex-1 flex flex-col items-center justify-center px-2">
                     <div class="bg-white px-6 py-8 rounded shadow-md text-black w-full">
                         <h1 class="mb-8 text-3xl text-center font-bold">Register Now</h1>
-                        <form action="">
+                        <form onSubmit={handleSubmit} action="">
                             <input
                                 type="text"
                                 class="block border border-gray-400 w-full p-3 rounded mb-4"

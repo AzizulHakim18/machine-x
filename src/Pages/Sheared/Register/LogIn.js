@@ -1,7 +1,55 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext, useState } from 'react';
+import { toast } from 'react-hot-toast';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../../Context/UserContexts';
 
 const LogIn = () => {
+
+    const [userEmail] = useState('')
+    // const [showPass, setShowPass] = useState(false)
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/'
+
+    const { signin, resetPassword, signInWithGoogle } = useContext(AuthContext)
+
+
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        const email = e.target.email.value
+        const password = e.target.password.value
+
+        console.log(email, password);
+        signin(email, password)
+            .then(result => {
+                toast.success("Log in successfully")
+                navigate(from, { replace: true });
+            })
+            .catch(error => toast.error("Failed to log in"));
+    }
+
+
+    // Google Signin
+    const handleGoogleSignIn = () => {
+        signInWithGoogle().then(result => {
+            console.log(result.user)
+            navigate(from, { replace: true })
+        })
+
+            .catch((error) => {
+                console.log(error);
+            })
+    }
+
+    //Reset Pass
+    const handleReset = () => {
+        resetPassword(userEmail)
+            .then(() => {
+                toast.success('Reset link has been sent, please check email')
+            })
+            .catch(error => toast.error(error.message))
+    }
     return (
         <div>
             <div className="bg-grey-lighter min-h-screen flex flex-col">
@@ -10,7 +58,7 @@ const LogIn = () => {
                         <h1 className="mb-8 text-3xl text-center font-bold">Log In</h1>
 
                         {/* for google registration */}
-                        <button className="group h-12  m-4 px-6 border-2 border-gray-300 rounded-full transition duration-300 
+                        <button onClick={handleGoogleSignIn} className="group h-12  m-4 px-6 border-2 border-gray-300 rounded-full transition duration-300 
  hover:border-blue-400 focus:bg-blue-50 active:bg-blue-100">
                             <div className="relative flex items-center space-x-4 justify-center">
                                 <img src="https://tailus.io/sources/blocks/social/preview/images/google.svg" className="absolute left-0 w-5" alt="google logo" />
@@ -18,7 +66,7 @@ const LogIn = () => {
                             </div>
                         </button>
 
-                        <form action="">
+                        <form onSubmit={handleSubmit} action="">
 
                             <input
                                 type="text"
@@ -40,7 +88,7 @@ const LogIn = () => {
                         {/* reset option */}
                         <div className='text-center'>
                             <button
-
+                                onClick={handleReset}
                                 className=' font-bold hover:underline text-red-700'
                             >
                                 Forgot password?

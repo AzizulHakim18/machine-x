@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { toast } from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../../Context/UserContexts';
 
 const Header = () => {
+
+    const { user, logout } = useContext(AuthContext);
+    console.log(user);
+    const name = user?.displayName;
+    console.log(name);
+    const handleLogout = () => {
+        logout()
+            .then(() => {
+                toast.success('successfully Loged out')
+            })
+            .catch(err => console.log(err))
+    }
     return (
         <div className="navbar bg-base-100">
             <div className="navbar-start">
@@ -14,8 +28,13 @@ const Header = () => {
                         <li><Link to="/services">Services</Link></li>
                         <li><Link to="/about">About</Link></li>
                         <li><Link to="/contact">Contact</Link></li>
-                        <li><Link to="/login">Log In</Link></li>
-                        <li><Link to="/registration">Registration</Link></li>
+
+                        {
+                            user?.uid ? (<li><Link onClick={handleLogout} to="/">Log Out</Link></li>) : (<li><Link to="/login">Log In</Link></li>)
+                        }
+
+
+
                     </ul>
                 </div>
                 <Link className="btn btn-ghost normal-case text-xl ">Machine.<span className='font-bold text-6xl italic text-amber-400'>x</span></Link>
@@ -26,13 +45,21 @@ const Header = () => {
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
-                    <li><Link to="/login">Log In</Link></li>
-                    <li><Link to="/registration">Registration</Link></li>
+                    {
+                        user?.uid ? (<li><Link onClick={handleLogout} to="/">Log Out</Link></li>) : (<li><Link to="/login">Log In</Link></li>)
+                    }
+
                 </ul>
             </div>
-            <div className="navbar-end">
-                <Link className="btn">Get started</Link>
-            </div>
+
+            {
+                user?.uid ? (<div className="navbar-end">
+                    <Link className="btn">{name}</Link>
+                </div>) : (<div className="navbar-end">
+                    <Link className="btn">User Name</Link>
+                </div>)
+            }
+
         </div>
     );
 };
