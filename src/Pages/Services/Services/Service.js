@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Service = ({ service }) => {
 
 
-    const { img, title, price, description } = service;
+    const { img, title, price, description, _id } = service;
 
     return (
         <div>
@@ -15,9 +16,9 @@ const Service = ({ service }) => {
                         <div className="badge badge-secondary">NEW</div>
                     </h2>
                     <p>{description}</p>
-                    <div className="card-actions justify-end">
+                    <div className="card-actions justify-between items-center">
                         <div className="badge badge-outline text-lg font-bold">Price:${price}</div>
-                        <div className="badge badge-outline ">Products</div>
+                        <Link to={`/checkout/${_id}`}><button className='btn btn-warning'>Details</button></Link>
                     </div>
                 </div>
             </div>

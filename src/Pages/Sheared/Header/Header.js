@@ -6,9 +6,9 @@ import { AuthContext } from '../../../Context/UserContexts';
 const Header = () => {
 
     const { user, logout } = useContext(AuthContext);
-    console.log(user);
+
     const name = user?.displayName;
-    console.log(name);
+
     const handleLogout = () => {
         logout()
             .then(() => {
@@ -30,9 +30,8 @@ const Header = () => {
                         <li><Link to="/contact">Contact</Link></li>
 
                         {
-                            user?.uid ? (<li><Link onClick={handleLogout} to="/">Log Out</Link></li>) : (<li><Link to="/login">Log In</Link></li>)
+                            user?.uid ? <div className='flex justify-center items-center'><li><Link to="/orders">Orders</Link></li><li><Link onClick={handleLogout} to="/">Log Out</Link></li> </div> : <div><li><Link to="/login">Log In</Link></li></div>
                         }
-
 
 
                     </ul>
@@ -45,8 +44,12 @@ const Header = () => {
                     <li><Link to="/services">Services</Link></li>
                     <li><Link to="/about">About</Link></li>
                     <li><Link to="/contact">Contact</Link></li>
-                    {
+                    {/* {
                         user?.uid ? (<li><Link onClick={handleLogout} to="/">Log Out</Link></li>) : (<li><Link to="/login">Log In</Link></li>)
+                    } */}
+
+                    {
+                        user?.uid ? <div className='flex justify-center items-center'><li><Link to="/orders">Orders</Link></li><li><Link onClick={handleLogout} to="/">Log Out</Link></li> </div> : <div><li><Link to="/login">Log In</Link></li></div>
                     }
 
                 </ul>

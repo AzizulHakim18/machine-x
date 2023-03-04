@@ -1,6 +1,5 @@
 [
     {
-        "id": "1a",
         "service_id": "01",
         "title": "Engine Oil Change",
         "img": "https://img.freepik.com/free-photo/creative-man-working-wood-workshop_23-2148970804.jpg?t=st=1677821205~exp=1677821805~hmac=373485dbbfe1f969e13fc4841be52d45139869b91e30f0ff3991b6d83eb567ed",
@@ -26,7 +25,6 @@
         ]
     },
     {
-        "id": "2a",
         "service_id": "02",
         "title": "Advanced Machine Service",
         "img": "https://img.freepik.com/free-photo/mechanic-with-tool-wheel-hands-mechanic-blue-work-clothes_1157-46153.jpg?w=996&t=st=1677821197~exp=1677821797~hmac=a75b50aafdc440826f88ffb28a1ebc6d51499aaf84aeb22a4c4d141002c7fff5",
@@ -52,7 +50,6 @@
         ]
     },
     {
-        "id": "3a",
         "service_id": "03",
         "title": "Diagnostic",
         "img": "https://img.freepik.com/free-photo/close-up-young-businessman-bike-shop_23-2149039057.jpg?w=996&t=st=1677821205~exp=1677821805~hmac=a640a40c4886a486ad52e1331f9ef89abbb9bfa9cce24311ea0f5a2d94833283",
@@ -78,7 +75,6 @@
         ]
     },
     {
-        "id": "4a",
         "service_id": "04",
         "title": "Engine Oil Change",
         "img": "https://img.freepik.com/free-photo/auto-mechanic-looking-car-s-engine-room_23-2147897818.jpg?w=996&t=st=1677838949~exp=1677839549~hmac=e1049624e78e582cfb121b39e1463a9974f1f1e707dfe205cffdfcdbb56d9f34",
@@ -104,7 +100,6 @@
         ]
     },
     {
-        "id": "5a",
         "service_id": "05",
         "title": "Engine Oil Change",
         "img": "https://img.freepik.com/free-photo/auto-mechanic-holding-hob-car_23-2147897811.jpg?w=996&t=st=1677839010~exp=1677839610~hmac=0cbd01207fdf754c5c13442b6ee1d60f7f51542870e2e4c16508577b64d10c24",
@@ -130,7 +125,6 @@
         ]
     },
     {
-        "id": "6a",
         "service_id": "06",
         "title": "Engine Oil Change",
         "img": "https://img.freepik.com/free-photo/portrait-young-worker-hard-hat-large-metalworking-plant_146671-19568.jpg?w=996&t=st=1677821021~exp=1677821621~hmac=5399f8c2a5c68d24a1f76149befadca1d5d538fadfc1ee06f16f60a8418dc1cf",
@@ -156,7 +150,6 @@
         ]
     },
     {
-        "id": "7a",
         "service_id": "07",
         "title": "Engine Oil Change",
         "img": "https://img.freepik.com/free-photo/female-carpenter-with-safety-glasses-tool_23-2148813320.jpg?w=826&t=st=1677821047~exp=1677821647~hmac=49dd883602d4525da85c514f7ddc0555d16023d2c5bfc3c9eb52ea2add9c296a",
